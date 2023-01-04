@@ -29,3 +29,33 @@ nav {
         }
     }
 }
+
+.sec1 {
+    @include navflex;
+    > :nth-child(1) {
+        order: 1;
+        img {
+            width: 500px;
+            height: 400px;
+        }
+    }
+    > :nth-child(2) {
+        order: 0;
+        align-self: center;
+        width: 500px;
+        h1 {
+            font-weight: 700;
+            font-size: 4rem;
+        }
+        p {
+            color: $Gray;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        button {
+            width: 175px;
+            border-radius: 25px;
+            height: 50px;
+        }
+    }
+}
