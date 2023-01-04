@@ -1,0 +1,22 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+* {
+    font-family: $poppins;
+}
+button {
+    background-color: $cian;
+    font-weight: 700;
+    color: white;
+    border: none !important;
+}
+
+@media screen and (min-width: 1440px) {
+    @import 'partials/desktop';
+}
+@media screen and (max-width: 1440px) and (min-width: 375px) {
+    @import 'partials/tablet';
+}
+@media screen and (max-width: 375px) {
+    @import 'partials/phone';
+}

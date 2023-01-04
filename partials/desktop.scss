@@ -1,0 +1,4 @@
+@import 'mixins';
+nav {
+    @include navflex;
+}

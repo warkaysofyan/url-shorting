@@ -1,0 +1,9 @@
+@mixin flex($A, $B) {
+    display: flex;
+    flex-direction: $A;
+    justify-content: $B;
+}
+@mixin navflex {
+    margin: 50px 05% !important;
+    @include flex(row, space-between);
+}

@@ -1,0 +1,48 @@
+* {
+  font-family: Poppins; }
+
+button {
+  background-color: #2acfcf;
+  font-weight: 700;
+  color: white;
+  border: none !important; }
+
+@media screen and (min-width: 1440px) {
+  nav {
+    margin: 50px 05% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
+@media screen and (max-width: 1440px) and (min-width: 375px) {
+  nav {
+    margin: 50px 05% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%; }
+    nav > :nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      list-style: none;
+      gap: 80px;
+      align-items: center;
+      padding-top: 0.5%;
+      width: 80%;
+      height: 100%;
+      font-weight: 700;
+      color: #bfbfbf; }
+    nav > :nth-child(3) {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      padding-top: -0.5%; }
+      nav > :nth-child(3) > :nth-child(1) {
+        background-color: transparent;
+        color: #bfbfbf;
+        width: 150px; }
+      nav > :nth-child(3) > :nth-child(2) {
+        width: 150px;
+        border-radius: 25px; } }
+
+/*# sourceMappingURL=style.css.map */
