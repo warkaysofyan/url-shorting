@@ -1,37 +1,45 @@
 @import 'mixins';
 // ! navigation bar###################################################
 nav {
-    @include navflex;
-    //position: fixed;
-    width: 90%;
-    > :nth-child(2) {
-        @include flex(row, left);
-        list-style: none;
-        gap: 80px;
+    margin: 50px 05% !important;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .nav-2 {
+        width: 100%;
+        hr {
+            display: none;
+        }
+        ul {
+            display: flex;
+            gap: 10px;
+            padding-top: 20px;
+            li {
+                color: $Gray;
+                font-weight: 700;
+                &:hover {
+                    color: $Very_D_Violet;
+                }
+            }
+        }
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        padding-top: 0.5%;
-        width: 80%;
-        height: 100%;
-        font-weight: 700;
-        color: $Gray;
-        li {
-            &:hover {
-                color: $Very_D_Violet;
+        > :nth-child(3) {
+            display: flex;
+            button {
+                height: 45px;
+                width: 120px;
+                border-radius: 22.5px;
+            }
+            > :nth-child(1) {
+                background-color: transparent;
+                color: $Gray;
             }
         }
     }
-    > :nth-child(3) {
-        @include flex(row, left);
-        padding-top: -0.5%;
-        > :nth-child(1) {
-            background-color: transparent;
-            color: $Gray;
-            width: 150px;
-        }
-        > :nth-child(2) {
-            width: 150px;
-            border-radius: 25px;
-        }
+    .burger {
+        display: none;
     }
 }
 // ! section 1 ########################################################
