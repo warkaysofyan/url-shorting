@@ -9,6 +9,7 @@
         <link href="dist/css/all.css" rel="stylesheet" />
         <link href="dist/css/micron.min.css" type="text/css" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="dist/js/jquery-3.6.3.min.js"></script>
         <script src="dist/js/micron.min.js" type="text/javascript"></script>
     </head>
     <body>
@@ -52,29 +53,22 @@
                     <div>
                         <input
                             type="text"
+                            id="inp"
                             placeholder="Shorten a link here..."
                         />
-                        <button>Shorten It!</button>
+                        <button id="submit">Shorten It!</button>
                     </div>
                     <p>pleas inter a link</p>
                 </div>
-                <div class="resulte-container">
-                    <div class="box-resulte r1">
+                <div class="resulte-container" id="response-container">
+                    <!-- <div class="box-resulte r1">
                         <div>https://www.warkaay.tk</div>
                         <hr />
                         <div>
                             <a href="#">https://www.warkaay.tk</a>
                             <button>copy</button>
                         </div>
-                    </div>
-                    <div class="box-resulte r1">
-                        <div>https://www.warkaay.tk</div>
-                        <hr />
-                        <div>
-                            <a href="#">https://www.warkaay.tk</a>
-                            <button>copy</button>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <h1>Advanced Statistics</h1>
@@ -192,8 +186,20 @@
 
         <script src="dist/js/bootstrap.bundle.min.js"></script>
         <script src="dist/js/all.min.js"></script>
+        <script src="dist/js/micron.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                let copy = T => {
+                    console.log('hello world');
+                };
+
+                copy('warkaysofyan');
+            });
+
+            document.getElementById('copy').addEventListener('click', () => {
+                console.log('hello world');
+            });
+        </script>
     </body>
 </html>
-
-<!-- 
-Challenge by Frontend Mentor. Coded by Your Name Here. -->
