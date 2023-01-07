@@ -50,9 +50,9 @@ button {
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 475px) {
     @import 'partials/tablet';
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     @import 'partials/phone';
 }
