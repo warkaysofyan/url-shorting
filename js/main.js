@@ -34,7 +34,7 @@ $(document).ready(function () {
                                 <hr />
                                 <div>
                                     <a href="${result.result.full_short_link2}" target="_blank">${result.result.full_short_link2}</a>
-                                    <button id="copy">copy</button>
+                                    <button id="copy" >copy</button>
                                 </div>
                             </div>`);
                     }
